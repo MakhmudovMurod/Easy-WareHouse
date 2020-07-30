@@ -1,0 +1,743 @@
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm">
+              <ol class="breadcrumb float-sm-left">
+                <!-- <li class="breadcrumb-item"><a href="#">Главная</a></li> -->
+                <li class="breadcrumb-item active">Создать Сделку</li>
+              </ol>
+            </div><!-- /.col -->
+          </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="row">
+
+
+
+
+          <!-- Cart -->
+          <div class="col-md-12">
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Детали Сделки</h3>
+              </div>
+              <div class="card-body">
+                <div class="row">
+
+                  <!-- Client Info -->
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Фамилия</label>
+
+                          <div class="input-group">
+                            <input type="text" class="form-control" data-mask>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Имя</label>
+
+                          <div class="input-group">
+                            <input type="text" class="form-control" data-mask>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label>Номер телефона</label>
+
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                            </div>
+                            <input type="tel" class="form-control" data-inputmask='"mask": "(99) 999-9999"' data-mask>
+                          </div>
+                          <!-- /.input group -->
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- table -->
+                  <div class="col-md-12">
+                    <label>Список Покупок</label>
+                    <table id="cartTable" class="table table-bordered table-striped">
+                      <thead>
+                        <th>ID</th>
+                        <th>Класс</th>
+                        <th>Подкласс</th>
+                        <th>Рисунок</th>
+                        <th>Сорт</th>
+                        <th>Цена</th>
+                        <th>Кол-во</th>
+                        <th>Сумма</th>
+                        <th>Убрать</th>
+                      </thead>
+
+                      <tbody>
+                      </tbody>
+                    </table>
+                    <div class="col-md-4 float-right">
+                      <div class="form-group">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <label for="cash_discount">Общая Скидка</label>
+                            <input type="number" class="form-control form-control-sm" id="cash_discount" placeholder="Скидка">
+                            <label for="paid_cash">Оплачено: </label>
+                            <input type="number" class="form-control form-control-sm" id="paid_cash" placeholder="оплачено">  
+                          </div>
+                          <div class="col-md-6">
+                            <label for="final_price">К Оплате</label>
+                            <input type="text" class="form-control form-control-sm" id="cash_discount" placeholder="Скидка" value="1000" disabled>
+                            <label for="dept">Долг</label>
+                            <input type="text" class="form-control form-control-sm" id="cash_discount" placeholder="Долг" value="1000" disabled>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-md-12">
+                    <div class="col-md-2 float-right">
+                      <button type="button" class="btn btn-block btn-primary float-right">Подтвердить
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Tables -->
+          <div class="col-12">
+            <!-- 1 sort -->
+            <div class="card card-info">
+              <div class="card-header">
+                <h3 class="card-title">Список имеющихся товаров на складе</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table id="product1" class="table table-bordered table-striped">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Класс</th>
+                      <th>Подкласс</th>
+                      <th>Рисунок</th>
+                      <th>Сорт</th>
+                      <th>Кол-во</th>
+                      <th>Цена</th>
+                      <th>Добавить</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Pineapple - Regular</td>
+                      <td>Lamb - Whole, Fresh</td>
+                      <td>Euro</td>
+                      <td>1</td>
+                      <td class="amt">60</td>
+                      <td>$2.72</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Roe - Flying Fish</td>
+                      <td>Vol Au Vents</td>
+                      <td>Yuan Renminbi</td>
+                      <td>1</td>
+                      <td class="amt">70</td>
+                      <td>$5.31</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>Horseradish Root</td>
+                      <td>Carbonated Water - Cherry</td>
+                      <td>Dollar</td>
+                      <td>1</td>
+                      <td class="amt">53</td>
+                      <td>$4.66</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td>Oyster - In Shell</td>
+                      <td>Catfish - Fillets</td>
+                      <td>Euro</td>
+                      <td>1</td>
+                      <td class="amt">22</td>
+                      <td>$1.76</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                     
+                     <tr>
+                      <td>82</td>
+                      <td>Sugar Thermometer</td>
+                      <td>Veal - Loin</td>
+                      <td>Dollar</td>
+                      <td>1</td>
+                      <td class="amt">78</td>
+                      <td>$4.03</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>83</td>
+                      <td>Sword Pick Asst</td>
+                      <td>Amaretto</td>
+                      <td>Yuan Renminbi</td>
+                      <td>1</td>
+                      <td class="amt">99</td>
+                      <td>$2.82</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>84</td>
+                      <td>English Muffin</td>
+                      <td>Wine - Hardys Bankside Shiraz</td>
+                      <td>Euro</td>
+                      <td>1</td>
+                      <td class="amt">39</td>
+                      <td>$3.41</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>85</td>
+                      <td>Plate Pie Foil</td>
+                      <td>Tea Leaves - Oolong</td>
+                      <td>Euro</td>
+                      <td>1</td>
+                      <td class="amt">88</td>
+                      <td>$3.67</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>86</td>
+                      <td>Cod - Salted, Boneless</td>
+                      <td>Vinegar - Balsamic, White</td>
+                      <td>Peso</td>
+                      <td>1</td>
+                      <td class="amt">62</td>
+                      <td>$2.56</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>87</td>
+                      <td>Potatoes - Fingerling 4 Oz</td>
+                      <td>Broccoli - Fresh</td>
+                      <td>Yuan Renminbi</td>
+                      <td>1</td>
+                      <td class="amt">45</td>
+                      <td>$1.47</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>88</td>
+                      <td>Wine - Red, Mosaic Zweigelt</td>
+                      <td>Energy Drink Bawls</td>
+                      <td>Hryvnia</td>
+                      <td>1</td>
+                      <td class="amt">59</td>
+                      <td>$9.86</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>89</td>
+                      <td>Vaccum Bag 10x13</td>
+                      <td>Skirt - 29 Foot</td>
+                      <td>Yuan Renminbi</td>
+                      <td>1</td>
+                      <td class="amt">83</td>
+                      <td>$4.14</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>90</td>
+                      <td>Squid Ink</td>
+                      <td>Appetizer - Mushroom Tart</td>
+                      <td>Ruble</td>
+                      <td>1</td>
+                      <td class="amt">34</td>
+                      <td>$5.57</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>91</td>
+                      <td>Beef - Striploin Aa</td>
+                      <td>Clam Nectar</td>
+                      <td>Zloty</td>
+                      <td>1</td>
+                      <td class="amt">56</td>
+                      <td>$3.47</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>92</td>
+                      <td>Scrubbie - Scotchbrite Hand Pad</td>
+                      <td>Wine - Sogrape Mateus Rose</td>
+                      <td>Peso</td>
+                      <td>1</td>
+                      <td class="amt">53</td>
+                      <td>$2.82</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>93</td>
+                      <td>Garam Masala Powder</td>
+                      <td>Steamers White</td>
+                      <td>Euro</td>
+                      <td>1</td>
+                      <td class="amt">40</td>
+                      <td>$5.89</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>94</td>
+                      <td>Banana - Green</td>
+                      <td>Wine - Chateau Bonnet</td>
+                      <td>Kuna</td>
+                      <td>1</td>
+                      <td class="amt">30</td>
+                      <td>$2.67</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>95</td>
+                      <td>Steamers White</td>
+                      <td>Sauce - Hollandaise</td>
+                      <td>Rupiah</td>
+                      <td>1</td>
+                      <td class="amt">87</td>
+                      <td>$3.25</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>96</td>
+                      <td>Foil - Round Foil</td>
+                      <td>Longos - Greek Salad</td>
+                      <td>Rupiah</td>
+                      <td>1</td>
+                      <td class="amt">77</td>
+                      <td>$6.25</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>97</td>
+                      <td>Wine - Coteaux Du Tricastin Ac</td>
+                      <td>Cheese - Cream Cheese</td>
+                      <td>Yuan Renminbi</td>
+                      <td>1</td>
+                      <td class="amt">65</td>
+                      <td>$1.86</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>98</td>
+                      <td>Apples - Spartan</td>
+                      <td>Cloves - Whole</td>
+                      <td>Peso</td>
+                      <td>1</td>
+                      <td class="amt">34</td>
+                      <td>$9.12</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>99</td>
+                      <td>Rice - Long Grain</td>
+                      <td>Coffee - Almond Amaretto</td>
+                      <td>Ruble</td>
+                      <td>1</td>
+                      <td class="amt">20</td>
+                      <td>$4.41</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>100</td>
+                      <td>Sauce - Plum</td>
+                      <td>Coffee - Espresso</td>
+                      <td>Naira</td>
+                      <td>1</td>
+                      <td class="amt">95</td>
+                      <td>$9.81</td>
+                      <td>
+                        <div class="row">
+                          <div class="col-sm-6">
+                            <div class="add-num"><input type="number" class="form-control" placeholder="добавить"></div>
+                          </div>
+                          <div class="col-6">
+                            <div class="add-btn">
+                              <button type="button" class="btn btn-block btn-info btn-sm">Добавить
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                     
+                     
+                     
+                     </tbody>
+                
+                  <tfoot>
+                    <tr>
+                      <th>ID</th>
+                      <th>Класс</th>
+                      <th>Подкласс</th>
+                      <th>Рисунок</th>
+                      <th>Сорт</th>
+                      <th>Кол-во</th>
+                      <th>Цена</th>
+                      <th></th>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
+
+
+        </div>
+        <!-- /.row -->
+      </section>
+      <!-- /.content -->
+    </div>
+
+
+    <!-- /.content-wrapper -->
+    <footer class="main-footer">
+      <!-- To the right -->
+      <div class="float-right d-none d-sm-inline-block">
+        Made By jmsnur && whitecoder
+      </div>
+      <!-- Default to the left -->
+      <strong>2020 <a href="#">Grand Spectrum</a>.</strong>
+    </footer>
+
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="/plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- Select2 -->
+  <script src="/plugins/select2/js/select2.full.min.js"></script>
+  <!-- DataTables -->
+  <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="/dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="/dist/js/demo.js"></script>
+  <!-- page script -->
+  <script>
+    $(function () {
+      $("#product1").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+      $("#example2").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+      $("#example3").DataTable({
+        "responsive": true,
+        "autoWidth": false,
+      });
+    });
+  </script>
+  <!-- InputMask -->
+  <script src="/plugins/moment/moment.min.js"></script>
+  <script src="/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table id="properties">
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <td nowrap>key1</td>
+                <td><input type="text" name="property_key1" value="value1" size="70" /></td>
+                <td class="data_item_options">
+                    <a class="buttonicon" href="javascript:deleteRow()" title="Delete row"
+                        onClick="deleteRow(this); return false;"></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table id="properties_rowtemplate" style="display:none" data-counter="0">
+        <tr>
+            <td><input type="text" name="newproperty_name_\${counter}" value="" size="35" /></td>
+            <td><input type="text" name="newproperty_value_\${counter}" value="" size="70" /></td>
+            <td><a class="buttonicon" href="javascript:deleteRow()" title="Delete row"
+                    onClick="deleteRow(this); return false;"></a></td>
+        </tr>
+    </table>
+    <a class="action" href="javascript:addRow()" onclick="addRow('properties'); return false" title="Add new row">Add
+        row</a><br />
+    <br />
+
+
+    <script>
+        - - - -
+            // add row to html table, read html from row template
+            function addRow(sTableId) {
+                // find destination and template tables, find first <tr>
+                // in template. Wrap inner html around <tr> tags.
+                // Keep track of counter to give unique field names.
+                var table = $("#" + sTableId);
+                var template = $("#" + sTableId + "_rowtemplate");
+                var htmlCode = "<tr>" + template.find("tr:first").html() + "</tr>";
+                var id = parseInt(template.data("counter"), 10) + 1;
+                template.data("counter", id);
+                htmlCode = htmlCode.replace(/\${counter}/g, id);
+                table.find("tbody:last").append(htmlCode);
+            }
+
+        // delete <TR> row, childElem is any element inside row
+        function deleteRow(childElem) {
+            var row = $(childElem).closest("tr"); // find <tr> parent
+            row.remove();
+        }
+
+    </script>
+</body>
+
+</html>

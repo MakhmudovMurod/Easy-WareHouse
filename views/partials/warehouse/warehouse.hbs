@@ -1,0 +1,1883 @@
+<!-- Content Wrapper. Contains page content -->
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm">
+                            <ol class="breadcrumb float-sm-left">
+                                <!-- <li class="breadcrumb-item"><a href="#">Главная</a></li> -->
+                                <li class="breadcrumb-item active">Остаток</li>
+                            </ol>
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+
+            <!-- Main content -->
+            <section class="content">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <h5 class="mb-2">Статус Склада</h5>
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-success"><i class="fa fa-dollar-sign"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Общая стоимость остатка</span>
+                                        <span class="info-box-number">$14 100</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-info"><i class="fa fa-cubes"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Общее кол-во товаров</span>
+                                        <span class="info-box-number">914</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-danger"><i class="far fa-star"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Товары 1-го сорта</span>
+                                        <span class="info-box-number">439</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-3 col-sm-6 col-12">
+                                <div class="info-box">
+                                    <span class="info-box-icon bg-success"><i class="far fa-clock"></i></span>
+
+                                    <div class="info-box-content">
+                                        <span class="info-box-text">Последнее обновление</span>
+                                        <span class="info-box-number">08/06/2020 13:00</span>
+                                    </div>
+                                    <!-- /.info-box-content -->
+                                </div>
+                                <!-- /.info-box -->
+                            </div>
+                            <!-- /.col -->
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+
+                    <!-- Tables -->
+                    <div class="col-12">
+                        <!-- 1 sort -->
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Список имеющихся товаров на складе</h3>
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+                                <table id="example1" class="table table-bordered table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Класс</th>
+                                            <th>Подкласс</th>
+                                            <th>Рисунок</th>
+                                            <th>Сорт</th>
+                                            <th>Кол-во</th>
+                                            <th>Цена</th>
+                                            <th>Добавить</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Pineapple - Regular</td>
+                                            <td>Lamb - Whole, Fresh</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td>$2.72</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Roe - Flying Fish</td>
+                                            <td>Vol Au Vents</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>70</td>
+                                            <td>$5.31</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Horseradish Root</td>
+                                            <td>Carbonated Water - Cherry</td>
+                                            <td>Dollar</td>
+                                            <td>1</td>
+                                            <td>53</td>
+                                            <td>$4.66</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Oyster - In Shell</td>
+                                            <td>Catfish - Fillets</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>22</td>
+                                            <td>$1.76</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Cake Circle, Foil, Scallop</td>
+                                            <td>Wine - Charddonnay Errazuriz</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td>$4.82</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Veal Inside - Provimi</td>
+                                            <td>Otomegusa Dashi Konbu</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>34</td>
+                                            <td>$1.14</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Soup - Campbells, Minestrone</td>
+                                            <td>Pepper - Yellow Bell</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>94</td>
+                                            <td>$5.36</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Halibut - Fletches</td>
+                                            <td>Pepper - Chillies, Crushed</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>88</td>
+                                            <td>$9.40</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Sauce - Black Current, Dry Mix</td>
+                                            <td>Extract - Almond</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>35</td>
+                                            <td>$9.47</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Glycerine</td>
+                                            <td>Flour - Cake</td>
+                                            <td>Dollar</td>
+                                            <td>1</td>
+                                            <td>28</td>
+                                            <td>$5.78</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Cheese - Feta</td>
+                                            <td>Dates</td>
+                                            <td>Dong</td>
+                                            <td>1</td>
+                                            <td>59</td>
+                                            <td>$5.60</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Sauce - Chili</td>
+                                            <td>Broom - Angled</td>
+                                            <td>Som</td>
+                                            <td>1</td>
+                                            <td>7</td>
+                                            <td>$1.90</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Ice Cream - Strawberry</td>
+                                            <td>Spice - Paprika</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>69</td>
+                                            <td>$6.49</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>14</td>
+                                            <td>Uniform Linen Charge</td>
+                                            <td>Wine - Red, Cabernet Merlot</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>62</td>
+                                            <td>$7.67</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>15</td>
+                                            <td>Table Cloth 53x53 White</td>
+                                            <td>Foam Tray S2</td>
+                                            <td>Ringgit</td>
+                                            <td>1</td>
+                                            <td>91</td>
+                                            <td>$2.35</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>16</td>
+                                            <td>Temperature Recording Station</td>
+                                            <td>Table Cloth 91x91 Colour</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>37</td>
+                                            <td>$4.13</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>17</td>
+                                            <td>Lobster - Tail 6 Oz</td>
+                                            <td>Salt - Kosher</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>68</td>
+                                            <td>$7.26</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>18</td>
+                                            <td>Sugar - Icing</td>
+                                            <td>Longos - Greek Salad</td>
+                                            <td>Pound</td>
+                                            <td>1</td>
+                                            <td>69</td>
+                                            <td>$6.86</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>19</td>
+                                            <td>Icecream - Dstk Cml And Fdg</td>
+                                            <td>Cheese - Mascarpone</td>
+                                            <td>Hryvnia</td>
+                                            <td>1</td>
+                                            <td>17</td>
+                                            <td>$3.48</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>20</td>
+                                            <td>Blueberries</td>
+                                            <td>Tabasco Sauce, 2 Oz</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>92</td>
+                                            <td>$2.29</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>21</td>
+                                            <td>Capers - Ox Eye Daisy</td>
+                                            <td>Beer - Fruli</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>18</td>
+                                            <td>$8.52</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>22</td>
+                                            <td>Pork - Loin, Center Cut</td>
+                                            <td>Turkey - Whole, Fresh</td>
+                                            <td>Hryvnia</td>
+                                            <td>1</td>
+                                            <td>69</td>
+                                            <td>$2.08</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>23</td>
+                                            <td>Dill Weed - Dry</td>
+                                            <td>Island Oasis - Pina Colada</td>
+                                            <td>Dinar</td>
+                                            <td>1</td>
+                                            <td>78</td>
+                                            <td>$8.20</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>24</td>
+                                            <td>Wine - White, Antinore Orvieto</td>
+                                            <td>Sauce - Marinara</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>24</td>
+                                            <td>$2.22</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>25</td>
+                                            <td>Chocolate - Compound Coating</td>
+                                            <td>Oysters - Smoked</td>
+                                            <td>Pound</td>
+                                            <td>1</td>
+                                            <td>60</td>
+                                            <td>$1.48</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>26</td>
+                                            <td>Wine - Kwv Chenin Blanc South</td>
+                                            <td>Pants Custom Dry Clean</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>28</td>
+                                            <td>$3.38</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>27</td>
+                                            <td>Coffee Decaf Colombian</td>
+                                            <td>Brandy - Bar</td>
+                                            <td>Dollar</td>
+                                            <td>1</td>
+                                            <td>64</td>
+                                            <td>$1.79</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>28</td>
+                                            <td>Skirt - 29 Foot</td>
+                                            <td>Sping Loaded Cup Dispenser</td>
+                                            <td>Dollar</td>
+                                            <td>1</td>
+                                            <td>1</td>
+                                            <td>$7.77</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>29</td>
+                                            <td>Halibut - Steaks</td>
+                                            <td>Milk Powder</td>
+                                            <td>Won</td>
+                                            <td>1</td>
+                                            <td>40</td>
+                                            <td>$2.10</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>30</td>
+                                            <td>Water - Mineral, Natural</td>
+                                            <td>Olives - Kalamata</td>
+                                            <td>Rial</td>
+                                            <td>1</td>
+                                            <td>85</td>
+                                            <td>$7.71</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>31</td>
+                                            <td>Chips Potato Reg 43g</td>
+                                            <td>Nantucket Cranberry Juice</td>
+                                            <td>Pula</td>
+                                            <td>1</td>
+                                            <td>71</td>
+                                            <td>$7.64</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>32</td>
+                                            <td>Muffin Mix - Morning Glory</td>
+                                            <td>Bread - White Epi Baguette</td>
+                                            <td>Dinar</td>
+                                            <td>1</td>
+                                            <td>85</td>
+                                            <td>$8.64</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>33</td>
+                                            <td>Bread - Triangle White</td>
+                                            <td>Shrimp - Black Tiger 26/30</td>
+                                            <td>Shekel</td>
+                                            <td>1</td>
+                                            <td>77</td>
+                                            <td>$7.81</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>34</td>
+                                            <td>Coffee Swiss Choc Almond</td>
+                                            <td>French Kiss Vanilla</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>90</td>
+                                            <td>$3.09</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>35</td>
+                                            <td>Curry Powder</td>
+                                            <td>Tabasco Sauce, 2 Oz</td>
+                                            <td>Koruna</td>
+                                            <td>1</td>
+                                            <td>78</td>
+                                            <td>$5.01</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>36</td>
+                                            <td>Pasta - Orecchiette</td>
+                                            <td>Wine - Balbach Riverside</td>
+                                            <td>Koruna</td>
+                                            <td>1</td>
+                                            <td>48</td>
+                                            <td>$5.67</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>37</td>
+                                            <td>Cheese - Fontina</td>
+                                            <td>Hot Chocolate - Individual</td>
+                                            <td>Lek</td>
+                                            <td>1</td>
+                                            <td>28</td>
+                                            <td>$9.18</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>38</td>
+                                            <td>Plate - Foam, Bread And Butter</td>
+                                            <td>Soup - Campbells, Beef Barley</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>96</td>
+                                            <td>$9.90</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>39</td>
+                                            <td>Cocoa Powder - Natural</td>
+                                            <td>Spaghetti Squash</td>
+                                            <td>Rupiah</td>
+                                            <td>1</td>
+                                            <td>75</td>
+                                            <td>$4.82</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>40</td>
+                                            <td>Olives - Green, Pitted</td>
+                                            <td>Salt - Table</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>30</td>
+                                            <td>$7.85</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>41</td>
+                                            <td>Plasticspoonblack</td>
+                                            <td>Creme De Cacao Mcguines</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>40</td>
+                                            <td>$5.92</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>42</td>
+                                            <td>Buffalo - Striploin</td>
+                                            <td>Cookies Cereal Nut</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>27</td>
+                                            <td>$4.82</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>43</td>
+                                            <td>Beer - Fruli</td>
+                                            <td>Seedlings - Buckwheat, Organic</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>53</td>
+                                            <td>$3.34</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>44</td>
+                                            <td>Rice - 7 Grain Blend</td>
+                                            <td>Potatoes - Pei 10 Oz</td>
+                                            <td>Rupiah</td>
+                                            <td>1</td>
+                                            <td>95</td>
+                                            <td>$7.78</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>45</td>
+                                            <td>Onions - Green</td>
+                                            <td>Sauce - Plum</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>51</td>
+                                            <td>$9.70</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>46</td>
+                                            <td>Beer - Camerons Cream Ale</td>
+                                            <td>Wine - Puligny Montrachet A.</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>25</td>
+                                            <td>$6.55</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>47</td>
+                                            <td>True - Vue Containers</td>
+                                            <td>Sauce - Marinara</td>
+                                            <td>Yen</td>
+                                            <td>1</td>
+                                            <td>72</td>
+                                            <td>$5.38</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>48</td>
+                                            <td>Lettuce - Green Leaf</td>
+                                            <td>Longos - Assorted Sandwich</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>61</td>
+                                            <td>$4.07</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>49</td>
+                                            <td>Steampan Lid</td>
+                                            <td>Pastry - Banana Tea Loaf</td>
+                                            <td>Real</td>
+                                            <td>1</td>
+                                            <td>27</td>
+                                            <td>$2.95</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>50</td>
+                                            <td>Cookie Dough - Peanut Butter</td>
+                                            <td>Oil - Sesame</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>55</td>
+                                            <td>$7.28</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>51</td>
+                                            <td>Cheese - Cottage Cheese</td>
+                                            <td>Shrimp - Tiger 21/25</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>27</td>
+                                            <td>$3.09</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>52</td>
+                                            <td>Rye Special Old</td>
+                                            <td>Sauce - Roasted Red Pepper</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>42</td>
+                                            <td>$1.06</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>53</td>
+                                            <td>Cabbage - Red</td>
+                                            <td>Pork - Belly Fresh</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>90</td>
+                                            <td>$5.19</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>54</td>
+                                            <td>Pasta - Gnocchi, Potato</td>
+                                            <td>Wine - Lamancha Do Crianza</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>35</td>
+                                            <td>$2.69</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>55</td>
+                                            <td>Broom - Push</td>
+                                            <td>Sobe - Lizard Fuel</td>
+                                            <td>Koruna</td>
+                                            <td>1</td>
+                                            <td>88</td>
+                                            <td>$8.90</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>56</td>
+                                            <td>Vinegar - Cider</td>
+                                            <td>Bread - 10 Grain</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>28</td>
+                                            <td>$1.71</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>57</td>
+                                            <td>Flower - Commercial Spider</td>
+                                            <td>Sauce - Marinara</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>88</td>
+                                            <td>$9.85</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>58</td>
+                                            <td>Creme De Menthe Green</td>
+                                            <td>Vermacelli - Sprinkles, Assorted</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>56</td>
+                                            <td>$9.64</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>59</td>
+                                            <td>Sausage - Blood Pudding</td>
+                                            <td>Beer - Fruli</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>38</td>
+                                            <td>$9.46</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>60</td>
+                                            <td>Appetizer - Seafood Assortment</td>
+                                            <td>Beef - Roasted, Cooked</td>
+                                            <td>Lilangeni</td>
+                                            <td>1</td>
+                                            <td>36</td>
+                                            <td>$5.04</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>61</td>
+                                            <td>Tea - Herbal I Love Lemon</td>
+                                            <td>Lettuce - Iceberg</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>69</td>
+                                            <td>$6.83</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>62</td>
+                                            <td>Soy Protein</td>
+                                            <td>Huck Towels White</td>
+                                            <td>Naira</td>
+                                            <td>1</td>
+                                            <td>37</td>
+                                            <td>$2.62</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>63</td>
+                                            <td>Pork - European Side Bacon</td>
+                                            <td>Bacardi Raspberry</td>
+                                            <td>Baht</td>
+                                            <td>1</td>
+                                            <td>85</td>
+                                            <td>$4.45</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>64</td>
+                                            <td>Yeast Dry - Fermipan</td>
+                                            <td>Yogurt - Plain</td>
+                                            <td>Sol</td>
+                                            <td>1</td>
+                                            <td>65</td>
+                                            <td>$9.88</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>65</td>
+                                            <td>Coffee Cup 16oz Foam</td>
+                                            <td>Cheese - Shred Cheddar / Mozza</td>
+                                            <td>Manat</td>
+                                            <td>1</td>
+                                            <td>56</td>
+                                            <td>$1.56</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>66</td>
+                                            <td>Nantucket Apple Juice</td>
+                                            <td>Fireball Whisky</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>8</td>
+                                            <td>$5.15</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>67</td>
+                                            <td>Wine - Red, Harrow Estates, Cab</td>
+                                            <td>Coffee - Decaffeinato Coffee</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>18</td>
+                                            <td>$3.80</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>68</td>
+                                            <td>Beef - Rib Eye Aaa</td>
+                                            <td>Soup Campbells Split Pea And Ham</td>
+                                            <td>Yen</td>
+                                            <td>1</td>
+                                            <td>90</td>
+                                            <td>$3.45</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>69</td>
+                                            <td>Grenadine</td>
+                                            <td>Pork - Back, Long Cut, Boneless</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>65</td>
+                                            <td>$8.67</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>70</td>
+                                            <td>Cheese - Le Cheve Noir</td>
+                                            <td>Broccoli - Fresh</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>93</td>
+                                            <td>$6.92</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>71</td>
+                                            <td>Mustard - Seed</td>
+                                            <td>Devonshire Cream</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td>$3.76</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>72</td>
+                                            <td>Sausage - Andouille</td>
+                                            <td>Sour Puss Sour Apple</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>96</td>
+                                            <td>$5.17</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>73</td>
+                                            <td>Radish - Pickled</td>
+                                            <td>Pepper - Scotch Bonnet</td>
+                                            <td>Rand</td>
+                                            <td>1</td>
+                                            <td>24</td>
+                                            <td>$9.53</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>74</td>
+                                            <td>Wine - Beringer Founders Estate</td>
+                                            <td>Shichimi Togarashi Peppeers</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>22</td>
+                                            <td>$2.27</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>75</td>
+                                            <td>Tea - Herbal I Love Lemon</td>
+                                            <td>Nougat - Paste / Cream</td>
+                                            <td>Lilangeni</td>
+                                            <td>1</td>
+                                            <td>35</td>
+                                            <td>$5.17</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>76</td>
+                                            <td>Muffin Hinge 117n</td>
+                                            <td>Veal - Striploin</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>66</td>
+                                            <td>$3.59</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>77</td>
+                                            <td>Beef - Bresaola</td>
+                                            <td>Scotch - Queen Anne</td>
+                                            <td>Zloty</td>
+                                            <td>1</td>
+                                            <td>67</td>
+                                            <td>$8.27</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>78</td>
+                                            <td>Asparagus - White, Fresh</td>
+                                            <td>Juice - Grape, White</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>56</td>
+                                            <td>$2.91</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>79</td>
+                                            <td>Grapes - Black</td>
+                                            <td>Cake - French Pear Tart</td>
+                                            <td>Dinar</td>
+                                            <td>1</td>
+                                            <td>5</td>
+                                            <td>$8.41</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>80</td>
+                                            <td>Chef Hat 20cm</td>
+                                            <td>Wine - Red, Metus Rose</td>
+                                            <td>Kwacha</td>
+                                            <td>1</td>
+                                            <td>71</td>
+                                            <td>$6.39</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>81</td>
+                                            <td>Glass - Wine, Plastic, Clear 5 Oz</td>
+                                            <td>Container Clear 8 Oz</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>32</td>
+                                            <td>$8.07</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>82</td>
+                                            <td>Sugar Thermometer</td>
+                                            <td>Veal - Loin</td>
+                                            <td>Dollar</td>
+                                            <td>1</td>
+                                            <td>78</td>
+                                            <td>$4.03</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>83</td>
+                                            <td>Sword Pick Asst</td>
+                                            <td>Amaretto</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>99</td>
+                                            <td>$2.82</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>84</td>
+                                            <td>English Muffin</td>
+                                            <td>Wine - Hardys Bankside Shiraz</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>39</td>
+                                            <td>$3.41</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>85</td>
+                                            <td>Plate Pie Foil</td>
+                                            <td>Tea Leaves - Oolong</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>88</td>
+                                            <td>$3.67</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>86</td>
+                                            <td>Cod - Salted, Boneless</td>
+                                            <td>Vinegar - Balsamic, White</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>62</td>
+                                            <td>$2.56</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>87</td>
+                                            <td>Potatoes - Fingerling 4 Oz</td>
+                                            <td>Broccoli - Fresh</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>45</td>
+                                            <td>$1.47</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>88</td>
+                                            <td>Wine - Red, Mosaic Zweigelt</td>
+                                            <td>Energy Drink Bawls</td>
+                                            <td>Hryvnia</td>
+                                            <td>1</td>
+                                            <td>59</td>
+                                            <td>$9.86</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>89</td>
+                                            <td>Vaccum Bag 10x13</td>
+                                            <td>Skirt - 29 Foot</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>83</td>
+                                            <td>$4.14</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>90</td>
+                                            <td>Squid Ink</td>
+                                            <td>Appetizer - Mushroom Tart</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>34</td>
+                                            <td>$5.57</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>91</td>
+                                            <td>Beef - Striploin Aa</td>
+                                            <td>Clam Nectar</td>
+                                            <td>Zloty</td>
+                                            <td>1</td>
+                                            <td>56</td>
+                                            <td>$3.47</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>92</td>
+                                            <td>Scrubbie - Scotchbrite Hand Pad</td>
+                                            <td>Wine - Sogrape Mateus Rose</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>53</td>
+                                            <td>$2.82</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>93</td>
+                                            <td>Garam Masala Powder</td>
+                                            <td>Steamers White</td>
+                                            <td>Euro</td>
+                                            <td>1</td>
+                                            <td>40</td>
+                                            <td>$5.89</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>94</td>
+                                            <td>Banana - Green</td>
+                                            <td>Wine - Chateau Bonnet</td>
+                                            <td>Kuna</td>
+                                            <td>1</td>
+                                            <td>30</td>
+                                            <td>$2.67</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>95</td>
+                                            <td>Steamers White</td>
+                                            <td>Sauce - Hollandaise</td>
+                                            <td>Rupiah</td>
+                                            <td>1</td>
+                                            <td>87</td>
+                                            <td>$3.25</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>96</td>
+                                            <td>Foil - Round Foil</td>
+                                            <td>Longos - Greek Salad</td>
+                                            <td>Rupiah</td>
+                                            <td>1</td>
+                                            <td>77</td>
+                                            <td>$6.25</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>97</td>
+                                            <td>Wine - Coteaux Du Tricastin Ac</td>
+                                            <td>Cheese - Cream Cheese</td>
+                                            <td>Yuan Renminbi</td>
+                                            <td>1</td>
+                                            <td>65</td>
+                                            <td>$1.86</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>98</td>
+                                            <td>Apples - Spartan</td>
+                                            <td>Cloves - Whole</td>
+                                            <td>Peso</td>
+                                            <td>1</td>
+                                            <td>34</td>
+                                            <td>$9.12</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>99</td>
+                                            <td>Rice - Long Grain</td>
+                                            <td>Coffee - Almond Amaretto</td>
+                                            <td>Ruble</td>
+                                            <td>1</td>
+                                            <td>20</td>
+                                            <td>$4.41</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>100</td>
+                                            <td>Sauce - Plum</td>
+                                            <td>Coffee - Espresso</td>
+                                            <td>Naira</td>
+                                            <td>1</td>
+                                            <td>95</td>
+                                            <td>$9.81</td>
+                                            <td>
+                                                <div class="row">
+                                                    <div class="col-sm-6"><input type="number" class="form-control"
+                                                            placeholder="добавить"></div>
+                                                    <div class="col-6"><button type="button"
+                                                            class="btn btn-block btn-info btn-sm">Добавить</button></div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Класс</th>
+                                            <th>Подкласс</th>
+                                            <th>Рисунок</th>
+                                            <th>Сорт</th>
+                                            <th>Кол-во</th>
+                                            <th>Цена</th>
+                                            <th></th>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.col -->
+
+
+                </div>
+                <!-- /.row -->
+            </section>
+            <!-- /.content -->
+        </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <!-- To the right -->
+            <div class="float-right d-none d-sm-inline-block">
+                Made By jmsnur && whitecoder
+            </div>
+            <!-- Default to the left -->
+            <strong>2020 <a href="#">Grand Spectrum</a>.</strong>
+        </footer>
+
+        <!-- Control Sidebar -->
+        <aside class="control-sidebar control-sidebar-dark">
+            <!-- Control sidebar content goes here -->
+        </aside>
+        <!-- /.control-sidebar -->
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- jQuery -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="/plugins/select2/js/select2.full.min.js"></script>
+    <!-- DataTables -->
+    <script src="/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="/dist/js/demo.js"></script>
+    <!-- page script -->
+    <script>
+        $(function () {
+            $("#example1").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
+            $("#example2").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
+            $("#example3").DataTable({
+                "responsive": true,
+                "autoWidth": false,
+            });
+        });
+    </script>
